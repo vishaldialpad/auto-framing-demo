@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Framing Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+  <h2 class="heading">Auto Framing with Smooth Zoom</h2>
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="toggleCentering"> Enable Centering
+    </label>
+    <button id="recenterBtn" disabled>Re-Center</button>
+  </div>
+
+  <br>
+  <div class="video-container">
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <canvas id="output" width="640" height="480" style="display:none;"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

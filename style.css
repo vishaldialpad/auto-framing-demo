@@ -1,0 +1,35 @@
+/* Center all components */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h2.heading {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  button,
+  label {
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .video-container {
+    position: relative;
+  }
+  
+  video,
+  canvas {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
